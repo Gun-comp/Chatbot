@@ -23,7 +23,7 @@ app.post("/webhook", async (req, res) => {
 
       //  logic 
       if (["สวัสดี", "Hello", "hello"].includes(userMessage)) {
-        replyText = "🎮 ยินดีต้อนรับสู่ Elysium Arcade";
+        replyText = "🎮 ยินดีต้อนรับสู่ Elysium Arcade \nคุณลูกค้า สามารถ พิมคำว่า เมนู ได้เลย";
       } else if (userMessage === "เมนู") {
         replyText =
           "📜 เมนูร้าน\n\n🎮 เกม\n💰 ราคา\n📦 โปรโมชัน\n\nพิมพ์คำที่ต้องการได้เลย";
@@ -32,9 +32,17 @@ app.post("/webhook", async (req, res) => {
       } else if (userMessage === "ราคา") {
         replyText = "💰 ราคาเริ่มต้น 100 บาท";
       } else if (["สนใจ", "ซื้อ"].includes(userMessage)) {
-        replyText = "ได้เลยครับ ลูกค้า \nรบกวนลูกค้าโอนเงินเสร็จแล้ว รบกวนส่งสลิปมาด้วยนะครับ \n PromptPay:093-143-xxxx";
+        replyText = "ได้เลยครับ ลูกค้า \nรบกวนลูกค้าโอนเงินเสร็จแล้ว รบกวนส่งสลิปมาด้วยนะครับ \nPromptPay:093-143-xxxx";
       } else if (["เรียบร้อย","เรียบร้อยครับ",].includes(userMessage)) {
-        replyText = "ขอบคุณครับ อย่าลืมมาใช้บริการอีกครั้งน้าา \nร้านค้า Elysium Arcade มีกิจกรรมให้เล่นเยอะมาก สามารถเข้าร่วมกิจกรรมได้นะคับ\nหลังจากเข้าร่มกิจกรรมสามารถ นำมาใช้เป็นส่วนรถได้";
+        replyText = "ขอบคุณครับ อย่าลืมมาใช้บริการอีกครั้งน้าา \nร้านค้า Elysium Arcade มีกิจกรรมให้เล่นเยอะมาก สามารถเข้าร่วมกิจกรรมได้นะครับ\nหลังจากเข้าร่มกิจกรรมสามารถ นำมาใช้เป็นส่วนลดได้";
+      } else if(["Valorant","วาโร"].includes(userMessage)) {
+        replyText = "ราคา เกม 100 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ"
+      } else if(["GTA V","gta","จีทีเอ"].includes(userMessage)) {
+        replyText = "ราคา เกม 200 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ"
+      } else if(["Minecraft",",มายคราฟ"].includes(userMessage)) {
+        replyText = "ราคา เกม 150 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ"
+      } else if (userMessage === "โปรโมชั่น") {
+        replyText = "ตอนไม่โปรโมชั่น ใดๆนะคับ ถ้ามีโปรโมชั่นหลังจากนี้จะแจ้งให้ทราบนะครับ"
       }
 
       try {
