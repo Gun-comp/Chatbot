@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 // 🔥 ใส่ Channel Access Token ของคุณตรงนี้
-const ACCESS_TOKEN = "5253446e814c90306fbec36ea5eb7935";
+const ACCESS_TOKEN = "7fnBilPdOCuwI6O1DoRrOUKGI9YxkuRPNEXrHncIhHUMD21eLW4qqGKZTwZnDWPmBqd+dNeplWfh75Lh5E6nzTGMQFHzYM5l2GhENeWF4dp+mkML/1QRwVBPrRSU6GoTnddqWe1P0aH+BxMBboUFcQdB04t89/1O/w1cDnyilFU=";
 
 app.get("/", (req, res) => {
   res.send("Server is running!");
