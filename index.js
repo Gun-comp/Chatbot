@@ -30,19 +30,19 @@ app.post("/webhook", async (req, res) => {
       } else if (userMessage === "เกม") {
         replyText = "🔥 มีเกม: Valorant / GTA V / Minecraft";
       } else if (userMessage === "ราคา") {
-        replyText = "💰 ราคาเริ่มต้น 100 บาท";
+        replyText = "Valorant ราคา 100 บาท ถ้าสนใจ ให้พิมคำว่า Valorant หรือ วาโร \nGTA V ราคา 200 บาท ถ้าสนใจให้พิมคำว่า GTA V หรือ gta5 \nMinecraft ราคา 150 บาท ถ้าสนใจพิมคำว่า Minecarft หรือ มายคราฟ";
       } else if (["สนใจ", "ซื้อ"].includes(userMessage)) {
-        replyText = "ได้เลยครับ ลูกค้า \nรบกวนลูกค้าโอนเงินเสร็จแล้ว รบกวนส่งสลิปมาด้วยนะครับ \nPromptPay:093-143-xxxx";
+        replyText = "ได้เลยครับ ลูกค้า \nรบกวนลูกค้าโอนเงินเสร็จแล้ว รบกวนส่งสลิปมาด้วยนะครับ \nPromptPay:093-143-xxxx \nโอนเงินเสร็จแล้ว ให้พิมคำว่า เรียบร้อย";
       } else if (["เรียบร้อย","เรียบร้อยครับ",].includes(userMessage)) {
         replyText = "ขอบคุณครับ อย่าลืมมาใช้บริการอีกครั้งน้าา \nร้านค้า Elysium Arcade มีกิจกรรมให้เล่นเยอะมาก สามารถเข้าร่วมกิจกรรมได้นะครับ\nหลังจากเข้าร่มกิจกรรมสามารถ นำมาใช้เป็นส่วนลดได้";
       } else if(["Valorant","วาโร"].includes(userMessage)) {
-        replyText = "ราคา เกม 100 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ"
-      } else if(["GTA V","gta","จีทีเอ"].includes(userMessage)) {
-        replyText = "ราคา เกม 200 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ"
+        replyText = "ราคา เกม 100 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ";
+      } else if(["GTA V","gta5","จีทีเอ"].includes(userMessage)) {
+        replyText = "ราคา เกม 200 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ";
       } else if(["Minecraft",",มายคราฟ"].includes(userMessage)) {
-        replyText = "ราคา เกม 150 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ"
+        replyText = "ราคา เกม 150 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ";
       } else if (userMessage === "โปรโมชั่น") {
-        replyText = "ตอนไม่โปรโมชั่น ใดๆนะคับ ถ้ามีโปรโมชั่นหลังจากนี้จะแจ้งให้ทราบนะครับ"
+        replyText = "ตอนไม่โปรโมชั่น ใดๆนะคับ ถ้ามีโปรโมชั่นหลังจากนี้จะแจ้งให้ทราบนะครับ";
       }
 
       try {
