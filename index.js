@@ -47,7 +47,7 @@ app.post("/webhook", async (req, res) => {
         replyText = "🔥 มีเกม: Valorant / GTA V / Minecraft \nValorant ราคา 100 บาท ถ้าสนใจ ให้พิมคำว่า Valorant หรือ วาโร \nGTA V ราคา 200 บาท ถ้าสนใจให้พิมคำว่า GTA V หรือ gta5 \nMinecraft ราคา 150 บาท ถ้าสนใจพิมคำว่า Minecarft หรือ มายคราฟ";
       } else if (userMessage === "ติดต่อฉัน") {
         replyText = "ตอนนี้ยังไม่มีช่องทางติดต่อ ทางอื่น ถ้ามีช่องทางติดต่ออื่นๆหลังจากนี้จะแจ้งให้ทราบนะครับ";
-
+      }
       try {
         await axios.post(
           "https://api.line.me/v2/bot/message/reply",
