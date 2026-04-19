@@ -39,7 +39,7 @@ app.post("/webhook", async (req, res) => {
         replyText = "ราคา เกม 100 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ";
       } else if(["GTA V","gta5","จีทีเอ"].includes(userMessage)) {
         replyText = "ราคา เกม 200 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ";
-      } else if(["Minecraft",",มายคราฟ"].includes(userMessage)) {
+      } else if(["Minecraft","มายคราฟ"].includes(userMessage)) {
         replyText = "ราคา เกม 150 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ";
       } else if (userMessage === "โปรโมชั่น") {
         replyText = "ตอนไม่โปรโมชั่น ใดๆนะคับ ถ้ามีโปรโมชั่นหลังจากนี้จะแจ้งให้ทราบนะครับ";
