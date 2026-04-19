@@ -43,7 +43,7 @@ app.post("/webhook", async (req, res) => {
         replyText = "ราคา เกม 150 บาท\nถ้าลูกค้าสนใจ ให้พิม สนใจ";
       } else if (userMessage === "โปรโมชั่น") {
         replyText = "ตอนนี้ไม่โปรโมชั่น ใดๆนะคับ ถ้ามีโปรโมชั่นหลังจากนี้จะแจ้งให้ทราบนะครับ";
-      } else if (userMessage === "เกมราคา") {
+      } else if (userMessage === "Game&Price") {
         replyText = "🔥 มีเกม: Valorant / GTA V / Minecraft \nValorant ราคา 100 บาท ถ้าสนใจ ให้พิมคำว่า Valorant หรือ วาโร \nGTA V ราคา 200 บาท ถ้าสนใจให้พิมคำว่า GTA V หรือ gta5 \nMinecraft ราคา 150 บาท ถ้าสนใจพิมคำว่า Minecarft หรือ มายคราฟ";
       }
 
